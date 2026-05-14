@@ -3,53 +3,64 @@ import './App.css'
 const navItems = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 const skills = [
-  'React',
-  'TypeScript',
-  'Tailwind CSS',
-  'Node.js',
-  'Python',
-  'Automation',
-  'Home Assistant',
-  'GitHub Actions',
-  'Cloud',
-  'APIs',
+  'Engineering Management',
+  'Team Leadership',
+  'Java',
+  'Spring Boot',
+  'Quarkus',
+  'Apache Kafka',
+  'Kubernetes',
+  'Azure AKS',
+  'Google Kubernetes Engine',
+  'PostgreSQL',
+  'Microservices',
+  'Digital Transformation',
+  'Mentoring',
+  'AI-assisted Engineering',
 ]
 
 const projects = [
   {
-    title: 'Personal Digital HQ',
+    title: 'OMS Modernization',
     description:
-      'A polished home base for professional identity, projects, writing, and contact links.',
-    tags: ['React', 'Vite', 'Tailwind'],
+      'Led the modernization of a business-critical order platform, migrating 10M+ objects from MongoDB to PostgreSQL with zero data loss. Built 4 AI-assisted validation tools that enabled 100% validation coverage and caught critical issues before go-live.',
+    tags: ['Quarkus', 'PostgreSQL', 'Kafka', 'Azure AKS', 'AI Tooling'],
   },
   {
-    title: 'Smart Home Automation',
+    title: 'TMS Greenfield Platform',
     description:
-      'Automation experiments that connect services, devices, and routines into practical workflows.',
-    tags: ['Home Assistant', 'YAML', 'IoT'],
+      'Drove architecture and delivery of a greenfield transport management system with a team of 5-8 engineers. Reached first production rollout in 9 months and established an architecture template reused across later platform initiatives.',
+    tags: ['Java', 'Spring', 'Kafka', 'GKE', 'Microservices'],
   },
   {
-    title: 'Agentic Workflow Lab',
+    title: 'Cloud Migration and Team Scaling',
     description:
-      'A sandbox for exploring AI-assisted development, productivity systems, and repeatable tooling.',
-    tags: ['AI', 'TypeScript', 'Automation'],
+      'Led two engineering teams through Kubernetes standardization and Azure migration while maintaining business continuity. Improved delivery predictability with a structured workflow and WIP discipline.',
+    tags: ['Leadership', 'Azure', 'Kubernetes', 'Delivery', 'Product'],
   },
 ]
 
 const experience = [
   {
-    role: 'Builder & Technologist',
-    company: 'Independent',
-    dates: 'Now',
+    role: 'Engineering Manager, Order Team',
+    company: 'La Redoute Portugal',
+    dates: '2025 - Present',
     summary:
-      'Creating practical software, automation, and personal systems that turn ideas into usable products.',
+      'Leading a 4-engineer product team responsible for core order processing. Focused on reliability, modernization, and measurable product impact.',
   },
   {
-    role: 'Portfolio Foundation',
-    company: 'goncalovenceslau.pt',
-    dates: '2026',
+    role: 'Engineering Manager, Multi-team Scope',
+    company: 'La Redoute Portugal',
+    dates: '2022 - 2025',
     summary:
-      'Launching a clean internet-facing presence for projects, experiments, and professional context.',
+      'Managed 2 teams (~10 engineers), led cloud transformation initiatives, and developed internal leadership with promotion-focused coaching.',
+  },
+  {
+    role: 'Tech Lead and Tech PM',
+    company: 'La Redoute Portugal',
+    dates: '2019 - 2022',
+    summary:
+      'Built and launched a greenfield cloud-native platform that became a company-wide architecture reference.',
   },
 ]
 
@@ -84,25 +95,26 @@ function App() {
         >
           <div>
             <p className="mb-5 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200">
-              goncalovenceslau.pt
+              Engineering Manager | Leiria, Portugal
             </p>
             <h1 className="max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
               Goncalo Venceslau
             </h1>
             <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-300">
-              A personal internet face for software, automation, AI-assisted workflows,
-              and practical projects built with care.
+              I lead engineering teams that modernize critical platforms, scale cloud-native
+              systems, and deliver product impact. 13 years in software, 7+ years in
+              leadership.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 className="rounded-full bg-cyan-300 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-200"
                 href="#projects"
               >
-                View projects
+                View flagship projects
               </a>
               <a
                 className="rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition hover:border-cyan-300/70 hover:text-cyan-200"
-                href="mailto:hello@goncalovenceslau.pt"
+                href="mailto:goncalovenceslau@gmail.com"
               >
                 Contact me
               </a>
@@ -117,25 +129,26 @@ function App() {
                   <div className="mx-auto mb-6 flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-cyan-300 to-fuchsia-400 text-4xl font-black text-slate-950">
                     GV
                   </div>
-                  <p className="text-lg font-semibold text-white">Builder. Automator. Explorer.</p>
-                  <p className="mt-2 text-sm text-slate-400">Photo or avatar placeholder</p>
+                  <p className="text-lg font-semibold text-white">Build platforms. Grow people. Ship impact.</p>
+                  <p className="mt-2 text-sm text-slate-400">Java | Kafka | Kubernetes | Leadership</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <Section id="about" kicker="About" title="A clear home for who I am and what I build.">
+        <Section id="about" kicker="About" title="I connect technical depth with people leadership.">
           <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
               <p className="text-lg leading-8 text-slate-300">
-                I use technology to turn messy ideas into useful systems. This site is a
-                starting point for my public work: software experiments, automation projects,
-                AI-assisted workflows, and notes from things I am learning.
+                I am an Engineering Manager at La Redoute focused on high-scale commerce
+                systems and organizational growth. My work spans greenfield architecture,
+                brownfield modernization, and team development that helps engineers grow into
+                larger roles.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
-              {['Software', 'Automation', 'AI workflows'].map((item) => (
+              {['Cloud-native systems', 'Product delivery', 'Talent growth'].map((item) => (
                 <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-5" key={item}>
                   <p className="text-sm text-slate-400">Focus</p>
                   <p className="mt-2 font-semibold text-white">{item}</p>
@@ -145,7 +158,7 @@ function App() {
           </div>
         </Section>
 
-        <Section id="skills" kicker="Skills" title="Modern tools for building fast, useful things.">
+        <Section id="skills" kicker="Skills" title="Leadership and platform engineering strengths.">
           <div className="flex flex-wrap gap-3">
             {skills.map((skill) => (
               <span
@@ -158,7 +171,7 @@ function App() {
           </div>
         </Section>
 
-        <Section id="projects" kicker="Projects" title="A starter showcase ready for real work.">
+        <Section id="projects" kicker="Projects" title="Selected work with clear business outcomes.">
           <div className="grid gap-6 md:grid-cols-3">
             {projects.map((project) => (
               <article
@@ -166,7 +179,7 @@ function App() {
                 key={project.title}
               >
                 <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                <p className="mt-4 min-h-28 leading-7 text-slate-300">{project.description}</p>
+                <p className="mt-4 min-h-44 leading-7 text-slate-300">{project.description}</p>
                 <div className="mt-6 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300" key={tag}>
@@ -179,7 +192,7 @@ function App() {
           </div>
         </Section>
 
-        <Section id="experience" kicker="Experience" title="A timeline you can expand as the story grows.">
+        <Section id="experience" kicker="Experience" title="Leadership trajectory across delivery and transformation.">
           <div className="space-y-5">
             {experience.map((item) => (
               <article className="rounded-3xl border border-white/10 bg-slate-900/70 p-6" key={item.role}>
@@ -196,18 +209,18 @@ function App() {
           </div>
         </Section>
 
-        <Section id="contact" kicker="Contact" title="Make it easy for people to reach you.">
+        <Section id="contact" kicker="Contact" title="Open to great conversations and meaningful challenges.">
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-400/10 to-fuchsia-500/10 p-8">
             <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              This contact area is ready for your preferred links. For now, it points to the
-              professional email address for the domain.
+              If you are hiring for Engineering Manager roles where delivery quality, platform
+              modernization, and team growth matter, I would be glad to connect.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 className="rounded-full bg-white px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-100"
-                href="mailto:hello@goncalovenceslau.pt"
+                href="mailto:goncalovenceslau@gmail.com"
               >
-                hello@goncalovenceslau.pt
+                goncalovenceslau@gmail.com
               </a>
               <a
                 className="rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition hover:border-cyan-300/70"
@@ -219,7 +232,7 @@ function App() {
               </a>
               <a
                 className="rounded-full border border-white/15 px-6 py-3 text-center font-semibold text-white transition hover:border-cyan-300/70"
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/goncalovenceslau/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -231,7 +244,7 @@ function App() {
       </main>
 
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
-        © 2026 Goncalo Venceslau. Built with React, Vite, TypeScript, and Tailwind CSS.
+        © 2026 Goncalo Venceslau. Engineering leadership with a builder mindset.
       </footer>
     </div>
   )
